@@ -36,7 +36,7 @@ public class App {
         // TODO
         // Create threads (HINT: You can store threads in arrays)
         // HINT: You can store threads in arrays
-        Primes Pr = new Primes();
+        PrimeThreads Pr = new PrimeThreads();
         Thread ThreadArray[] = new Thread[numberOfThreads];
         for (int i = 0; i < numberOfThreads; i++){
             ThreadArray[i] = new Thread(Pr);
@@ -70,7 +70,7 @@ public class App {
         return true;
     }
 
-    static class Primes extends Thread implements Runnable{
+    static class PrimeThreads extends Thread implements Runnable{
         public void run(){
             /*
             Se inicia un contador para poder marcar el timepo
